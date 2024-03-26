@@ -2,10 +2,10 @@ var n=document.querySelectorAll(".drum").length;
 
 for(var i=0;i<n;i++)
 {
-    document.querySelectorAll(".drum")[i].addEventListener("click",function ()
+    document.querySelectorAll(".drum")[i].addEventListener("click",function()
     {
         
-        var buttoninnerHTML=this.innerHTML;
+        var buttoninnerHTML=this.classList[0];
         
         makeSound(buttoninnerHTML);
         buttonAnimation(buttoninnerHTML);
